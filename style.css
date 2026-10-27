@@ -1,0 +1,171 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #faf6f0;
+  color: #4a4a4a;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  line-height: 1.6;
+}
+
+a {
+  color: #4a4a4a;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e2dd;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+nav a {
+  margin-left: 25px;
+}
+
+nav a:hover {
+  color: #c9b8a6;
+}
+
+#accueil {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+#accueil h1 {
+  font-size: 42px;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+.bouton {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 28px;
+  background-color: #c9b8a6;
+  color: #ffffff;
+  border-radius: 30px;
+}
+
+.bouton:hover {
+  background-color: #b5a290;
+}
+
+#produits {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+#produits h2 {
+  font-weight: normal;
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.cartes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
+}
+
+.carte {
+  background-color: #ffffff;
+  border: 1px solid #e5e2dd;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+.carte h3 {
+  color: #c9b8a6;
+  font-size: 22px;
+}
+
+#apropos {
+  background-color: #ffffff;
+  padding: 60px 40px;
+  text-align: center;
+}
+
+#apropos h2,
+#contact h2 {
+  font-weight: normal;
+  font-size: 32px;
+}
+
+#apropos p {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#contact {
+  padding: 60px 40px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+#contact label {
+  display: block;
+  margin-top: 15px;
+}
+
+#contact input,
+#contact textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  border: 1px solid #e5e2dd;
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+#contact .bouton {
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  border-top: 1px solid #e5e2dd;
+  font-size: 14px;
+}
+
+/* Petits écrans (téléphones) : toujours à la fin du fichier */
+@media (max-width: 700px) {
+  header {
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px 20px;
+  }
+
+  nav a {
+    margin: 0 10px;
+  }
+
+  #accueil {
+    padding: 60px 20px;
+  }
+
+  #accueil h1 {
+    font-size: 30px;
+  }
+
+  #produits,
+  #apropos,
+  #contact {
+    padding: 40px 20px;
+  }
+}

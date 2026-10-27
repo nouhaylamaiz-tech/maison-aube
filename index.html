@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maison Aube | Crèmes et parfums pour le corps</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+
+    <header>
+      <a href="#accueil" class="logo">Maison Aube</a>
+      <nav>
+        <a href="#produits">Nos crèmes</a>
+        <a href="#apropos">À propos</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+
+      <section id="accueil">
+        <h1>Douceur et parfum pour votre peau</h1>
+        <p>Des crèmes pour le corps aux parfums délicats : vanille, monoï et passion.</p>
+        <a href="#produits" class="bouton">Découvrir nos crèmes</a>
+      </section>
+
+      <section id="produits">
+        <h2>Nos crèmes</h2>
+        <div class="cartes">
+
+          <div class="carte">
+            <h3>Vanille</h3>
+            <p>Une crème douce et gourmande, pour une peau soyeuse.</p>
+          </div>
+
+          <div class="carte">
+            <h3>Monoï</h3>
+            <p>Un parfum solaire et délicat, comme un souvenir de vacances.</p>
+          </div>
+
+          <div class="carte">
+            <h3>Passion</h3>
+            <p>Une crème fruitée et lumineuse, pleine de douceur.</p>
+          </div>
+
+        </div>
+      </section>
+
+      <section id="apropos">
+        <h2>À propos</h2>
+        <p>Maison Aube est née d'une envie simple : offrir aux femmes des soins pour le corps doux, parfumés et pleins de délicatesse.</p>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Écris-nous à : maisonaube@gmail.com</p>
+        <form id="formulaireContact">
+          <label for="champNom">Ton prénom</label>
+          <input type="text" id="champNom" placeholder="Ton prénom">
+
+          <label for="champEmail">Ton email</label>
+          <input type="email" id="champEmail" placeholder="Ton email">
+
+          <label for="champMessage">Ton message</label>
+          <textarea id="champMessage" rows="4" placeholder="Écris ton message"></textarea>
+
+          <button type="submit" class="bouton">Envoyer</button>
+          <p id="messageContact"></p>
+        </form>
+      </section>
+
+    </main>
+
+    <footer>
+      <p>© 2026 Maison Aube. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
